@@ -2,7 +2,6 @@ CREATE DATABASE IF NOT EXISTS `companydb`;
 
 USE `companydb`;
 
--- Creación de tablas sin display width (INT sin paréntesis)
 CREATE TABLE `employee` (
   id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(45) DEFAULT NULL,
@@ -18,7 +17,7 @@ CREATE TABLE `proveedores` (
   PRIMARY KEY(id)
 );
 
--- Inserción de datos (corregido "proveedor" -> "proveedores" y formato de teléfono)
+
 INSERT INTO employee VALUES 
   (1, 'Joe', 1000),
   (2, 'Henry', 2000),
