@@ -1,8 +1,6 @@
-import app from './app.js'
-import {PORT} from './config.js'
+import app from './app.js';
+import { PORT } from './config.js';
 import express from 'express';
-
-export const PORT = process.env.PORT || 3000;
 
 const router = express.Router();
 
@@ -12,5 +10,5 @@ router.get('/employees', (req, res) => {
 
 app.use(router);
 
-app.listen(PORT)
-console.log('server running on port', PORT)
+app.listen(PORT);
+console.log('server running on port', PORT);
